@@ -10,7 +10,8 @@
   "gypfile": true,
   "scripts": {
     "test": "mocha test.js --require chai/register-expect.js",
-    "install": "node-gyp rebuild"
+    "install": "node-gyp rebuild",
+    "generate-docs": "mkdir -p ./docs && rm -r ./docs && jsdoc index.cjs -r -c .jsdoc.json --verbose -d ./docs"
   },
   "author": "Lily Anne Hall <mail@tacticalchihuahua.lol>",
   "license": "LGPL-3.0",

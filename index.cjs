@@ -2,6 +2,10 @@
 
 const addon = require('bindings')('equihash');
 
+/**
+  * Solves an equihash Proof-of-Work
+  *
+  */
 function solve(input, n = 90, k = 5) {
   return new Promise((resolve, reject) => {
     addon.solve({
@@ -17,6 +21,10 @@ function solve(input, n = 90, k = 5) {
   });
 };
 
+/**
+  * Verifies a equihash Proof
+  *
+  */
 function verify(input, proof, nonce = 1, n = 90, k = 5) {
   if (proof.length < 128) {
     return Promise.reject(new Error('Invalid proof length'));
