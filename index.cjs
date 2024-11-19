@@ -4,7 +4,10 @@ const addon = require('bindings')('equihash');
 
 /**
   * Solves an equihash Proof-of-Work
-  *
+  * @param {Buffer} input 
+  * @param {number} [n=90] 
+  * @param {number} [k=5] 
+  * @returns {Promise<{ proof, nonce, n, k }>}
   */
 function solve(input, n = 90, k = 5) {
   return new Promise((resolve, reject) => {
@@ -23,7 +26,12 @@ function solve(input, n = 90, k = 5) {
 
 /**
   * Verifies a equihash Proof
-  *
+  * @param {Buffer} input
+  * @param {Buffer} proof 
+  * @param {number} [nonce=1] 
+  * @param {number} [n=90] 
+  * @param {number} [k=5] 
+  * @returns {Promise<Boolean>}
   */
 function verify(input, proof, nonce = 1, n = 90, k = 5) {
   if (proof.length < 128) {
