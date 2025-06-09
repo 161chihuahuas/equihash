@@ -1,3 +1,8 @@
+/**
+ * Equihash solver and verifier.
+ * @module equihash
+ */
+
 'use strict';
 
 const addon = require('bindings')('equihash');
@@ -49,4 +54,5 @@ function verify(input, proof, nonce = 1, n = 90, k = 5) {
   return Promise.resolve(valid);
 };
 
-module.exports = { solve, verify };
+module.exports.solve = solve;
+module.exports.verify = verify;

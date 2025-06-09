@@ -1,4 +1,4 @@
-# equihash.node *modernized node.js native addon*
+# ⛏️ equihash.node ~ *native equihash solver and verifier*
 
 This package is a modern refactor of khovratovich/equihash, which has not seen updates since 2016. It borrows from digitalbazaar/equihash's native node.js addon, which has not been updated since 2017. This package reworks them to compile with the latest versions of node-gyp and g++.
 

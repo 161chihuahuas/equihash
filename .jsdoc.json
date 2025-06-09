@@ -10,7 +10,7 @@
     "template": "./node_modules/clean-jsdoc-theme",
     "theme_opts": {
       "default_theme": "dark",
-      "homepageTitle": "equihash.node ~ modernized node.js native addon"
+      "homepageTitle": "⛏️ equihash.node ~ native equihash solver and verifier"
     }
   },
   "markdown": {
