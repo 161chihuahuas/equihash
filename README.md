@@ -1,15 +1,15 @@
-# ⛏️ equihash.node ~ *native equihash solver and verifier*
+# ⛏️ equihash ~ *native equihash solver and verifier*
 
 This package is a modern refactor of khovratovich/equihash, which has not seen updates since 2016. It borrows from digitalbazaar/equihash's native node.js addon, which has not been updated since 2017. This package reworks them to compile with the latest versions of node-gyp and g++.
 
 ## usage
 
 ```sh
-npm install @tacticalchihuahua/equihash
+npm install @yipyap/equihash
 ```
 
 ```js
-import { solve, verify } from '@tacticalchihuahua/equihash';
+import { solve, verify } from '@yipyap/equihash';
 import { randomBytes } from 'crypto';
 
 const N = 90;
@@ -43,6 +43,6 @@ async function demo() {
 * [Original C++ implementation of equihash proof-of-work by khovratovich](https://github.com/khovratovich/equihash)
 * [Original Native Node.js module by digitalbazaar](https://github.com/digitalbazaar/equihash)
 
-## license
+## copying
 
  <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/lilyannehall/equihash">@tacticalchihuahua/equihash</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/lilyannehall">Lily Anne Hall</a> is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt=""></a></p> 

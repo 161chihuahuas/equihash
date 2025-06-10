@@ -1,5 +1,5 @@
 {
-  "name": "@tacticalchihuahua/equihash",
+  "name": "@yipyap/equihash",
   "version": "1.0.0",
   "description": "equihash solver and prover native addon",
   "main": "index.cjs",
@@ -13,7 +13,7 @@
     "install": "node-gyp rebuild",
     "generate-docs": "mkdir -p ./docs && rm -r ./docs && jsdoc index.cjs -r -c .jsdoc.json --verbose -d ./docs"
   },
-  "author": "Lily Anne Hall <mail@tacticalchihuahua.lol>",
+  "author": "chiahuahua.rodeo <161chihuahuas@disroot.org>",
   "license": "LGPL-3.0",
   "dependencies": {
     "bindings": "^1.5.0",
