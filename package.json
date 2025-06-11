@@ -1,5 +1,5 @@
 {
-  "name": "@yipyap/equihash",
+  "name": "@yipsec/equihash",
   "version": "1.0.0",
   "description": "equihash solver and prover native addon",
   "main": "index.cjs",

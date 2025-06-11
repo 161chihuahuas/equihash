@@ -5,11 +5,11 @@ This package is a modern refactor of khovratovich/equihash, which has not seen u
 ## usage
 
 ```sh
-npm install @yipyap/equihash
+npm install @yipsec/equihash
 ```
 
 ```js
-import { solve, verify } from '@yipyap/equihash';
+import { solve, verify } from '@yipsec/equihash';
 import { randomBytes } from 'crypto';
 
 const N = 90;
